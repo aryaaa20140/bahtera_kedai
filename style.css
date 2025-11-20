@@ -174,3 +174,143 @@ nav a:hover {
     color: var(--secondary-color);
     font-weight: bold;
 }
+/* --- Styling Halaman Furniture (furniture.html) --- */
+
+.furniture-page {
+    padding-top: 80px; /* Jaga jarak dari navbar */
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.furniture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.product-card {
+    background-color: var(--primary-color); /* Cokelat Tua */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #4B3F38; /* Placeholder gelap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    color: var(--secondary-color);
+    margin: 5px 0 5px 0;
+    font-size: 1.4em;
+}
+
+.product-info p {
+    color: rgba(245, 222, 179, 0.8);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    display: block;
+    color: #FFD700; /* Emas */
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* --- Styling Popup Modal --- */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay gelap */
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: var(--primary-color);
+    margin: 10% auto; /* Tengah vertikal dan horizontal */
+    padding: 30px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+    animation: zoomIn 0.3s;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-button {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #FF4500; /* OrangeRed */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.modal-content p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.modal-content .modal-price {
+    font-size: 1.8em;
+    color: #FFD700;
+    font-weight: bold;
+}
