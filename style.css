@@ -1,0 +1,176 @@
+/* style.css - Styling untuk Kedai Bathara */
+
+/* --- Variabel Warna Fancy (Emas/Krem dan Cokelat Tua) --- */
+:root {
+    --primary-color: #A0522D; /* Cokelat Tua (Sienna) */
+    --secondary-color: #F5DEB3; /* Krem (Wheat) */
+    --text-color-light: #F5DEB3;
+    --text-color-dark: #362819; /* Cokelat Sangat Tua */
+    --category-color: #B8860B; /* DarkGoldenRod untuk judul kategori menu */
+}
+
+/* --- Global Styling --- */
+body {
+    font-family: 'Georgia', serif;
+    background-color: var(--text-color-dark); /* Background gelap */
+    color: var(--text-color-light); /* Teks terang */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Container untuk Beranda dan Tentang Kami --- */
+/* Dipakai di index.html dan about.html */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.card {
+    max-width: 800px;
+    padding: 40px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Navbar (Digunakan di semua halaman) --- */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+}
+
+/* --- Styling Halaman Beranda (index.html) --- */
+.hero-title {
+    font-size: 3.5em;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.menu-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    display: inline-block;
+}
+
+.menu-button:hover {
+    background-color: #EEDD82; /* Khaki lebih terang */
+    transform: scale(1.05);
+}
+
+/* --- Styling Halaman Menu (menu.html) --- */
+.menu-page {
+    padding: 20px;
+}
+
+.header-menu {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 50px; /* Jaga jarak dari navbar */
+}
+
+.header-menu h1 {
+    font-size: 3em;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px var(--primary-color);
+}
+
+.menu-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.category {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.category h2 {
+    color: var(--category-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(245, 222, 179, 0.5);
+    padding: 10px 0;
+}
+
+.item-details {
+    text-align: left;
+}
+
+.item-details strong {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+}
+
+.item-details small {
+    display: block;
+    font-style: italic;
+    color: rgba(245, 222, 179, 0.8);
+    margin-top: 3px;
+}
+
+.item-price {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--secondary-color);
+}
+
+/* --- Styling Halaman Tentang Kami (about.html) --- */
+.about-title {
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 0.5em;
+}
+
+.about-card p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.highlight {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
