@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Bathara - Furniture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="furniture-page">
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="furniture.html">Furniture</a> 
+    </nav>
+
+    <div class="header-menu">
+        <h1 class="hero-title">Koleksi Furniture Bathara 🛋️</h1>
+        <p class="subtitle">Perlengkapan premium yang menambah nuansa klasik kedai Anda.</p>
+    </div>
+
+    <div class="furniture-grid">
+        
+        <div class="product-card" 
+             data-name="Sofa Chesterfield Vintage" 
+             data-desc="Sofa beludru dengan kancing khas Chesterfield. Mewah dan nyaman." 
+             data-price="Rp 7.500.000">
+            <div class="product-image">
+                SOFA VINTAGE
+            </div>
+            <div class="product-info">
+                <h3>Sofa Chesterfield</h3>
+                <p>Sofa beludru dengan kancing khas. Mewah.</p>
+                <span class="product-price">Rp 7.500.000</span>
+            </div>
+        </div>
+
+        <div class="product-card" 
+             data-name="Meja Kayu Solid Jati" 
+             data-desc="Meja makan/kerja dari kayu Jati utuh. Finishing natural oil." 
+             data-price="Rp 4.200.000">
+            <div class="product-image">
+                MEJA JATI
+            </div>
+            <div class="product-info">
+                <h3>Meja Kayu Solid Jati</h3>
+                <p>Meja makan/kerja dari kayu Jati utuh.</p>
+                <span class="product-price">Rp 4.200.000</span>
+            </div>
+        </div>
+        
+        <div class="product-card" 
+             data-name="Kursi Rotan Alami" 
+             data-desc="Kursi santai dari anyaman rotan berkualitas tinggi. Ringan dan artistik." 
+             data-price="Rp 950.000">
+            <div class="product-image">
+                KURSI ROTAN
+            </div>
+            <div class="product-info">
+                <h3>Kursi Rotan Alami</h3>
+                <p>Kursi santai dari anyaman rotan berkualitas.</p>
+                <span class="product-price">Rp 950.000</span>
+            </div>
+        </div>
+
+        <div class="product-card" 
+             data-name="Rak Display Besi Industrial" 
+             data-desc="Rak dengan rangka besi dan papan kayu, cocok untuk pajangan buku atau dekorasi." 
+             data-price="Rp 2.100.000">
+            <div class="product-image">
+                RAK BESI
+            </div>
+            <div class="product-info">
+                <h3>Rak Display Industrial</h3>
+                <p>Rangka besi dengan papan kayu solid.</p>
+                <span class="product-price">Rp 2.100.000</span>
+            </div>
+        </div>
+        
+        </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modalImagePlaceholder" class="product-image" style="height: 150px; margin-bottom: 20px;">
+                </div>
+            <h2 id="modalTitle">Judul Produk</h2>
+            <p id="modalDescription">Deskripsi lengkap produk.</p>
+            <p>Harga Spesial:</p>
+            <span id="modalPrice" class="modal-price">Rp X.XXX.XXX</span>
+            <p style="font-size: 0.9em; margin-top: 20px;">Hubungi kami untuk pemesanan dan ketersediaan stok.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
